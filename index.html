@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ANAYA Boutique & Couture — Mode, élégance et confiance au Mali.">
+  <title>ANAYA Boutique & Couture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">✨ Livraison rapide partout au Mali · Paiement à la livraison · <a href="https://wa.me/22396966666" target="_blank">WhatsApp : 96 96 66 66</a></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <button class="mobile-menu" id="mobileMenu" aria-label="Menu">☰</button>
+      <a class="brand" href="#accueil" aria-label="ANAYA Boutique">
+        <div class="brand-mark">A</div>
+        <div><strong>ANAYA</strong><span>BOUTIQUE & COUTURE</span></div>
+      </a>
+
+      <div class="search">
+        <span>⌕</span><input id="searchInput" type="search" placeholder="Rechercher un produit...">
+      </div>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="accountBtn" title="Mon compte">♙</button>
+        <button class="cart-btn" id="cartOpen" title="Panier">🛒 <b id="cartCount">0</b></button>
+      </div>
+    </div>
+
+    <nav class="nav" id="nav">
+      <div class="container nav-inner">
+        <a class="active" href="#accueil">⌂ Accueil</a>
+        <a href="#catalogue">👗 Vêtements</a>
+        <a href="#catalogue">👠 Chaussures</a>
+        <a href="#catalogue">⌚ Montres</a>
+        <a href="#catalogue">👜 Sacs & Accessoires</a>
+        <a href="#nouveautes">★ Nouveautés</a>
+        <a href="#promotions">🔥 Promotions</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <span class="eyebrow">NOUVELLE COLLECTION · 2026</span>
+          <h1>Révélez votre <em>élégance</em></h1>
+          <p>Des collections tendance pour une femme moderne, élégante et sûre d'elle.</p>
+          <div class="hero-buttons">
+            <a class="btn primary" href="#catalogue">Découvrir nos collections →</a>
+            <a class="btn light" href="https://wa.me/22396966666?text=Bonjour%20ANAYA%2C%20je%20souhaite%20d%C3%A9couvrir%20vos%20collections." target="_blank">Commander sur WhatsApp</a>
+          </div>
+          <div class="trust-row">
+            <div><b>◇</b><span><strong>Qualité</strong> garantie</span></div>
+            <div><b>▣</b><span><strong>Livraison</strong> rapide</span></div>
+            <div><b>✓</b><span><strong>Satisfaction</strong> assurée</span></div>
+          </div>
+        </div>
+        <div class="hero-art premium-visual">
+          <div class="visual-glow"></div>
+          <div class="fashion-sticker sticker-main">ANAYA</div>
+          <div class="fashion-card">
+            <span class="mini-label">COLLECTION 2026</span>
+            <strong>Mode<br><em>& élégance</em></strong>
+            <small>Des pièces pensées pour vous.</small>
+            <a href="#catalogue">Explorer la collection →</a>
+          </div>
+          <div class="round-sticker">NEW<br><b>2026</b></div>
+          <div class="sparkle s1">✦</div><div class="sparkle s2">✧</div><div class="sparkle s3">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories section">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow">EXPLOREZ</span><h2>Nos <span>catégories</span></h2></div>
+          <a href="#catalogue">Voir toutes les catégories →</a>
+        </div>
+        <div class="category-grid">
+          <button class="category-card" data-category="Vêtements"><div class="cat-icon">👗</div><strong>Vêtements</strong><small>Robe · Ensemble · Boubou</small></button>
+          <button class="category-card" data-category="Chaussures"><div class="cat-icon">👠</div><strong>Chaussures</strong><small>Escarpins · Baskets · Sandales</small></button>
+          <button class="category-card" data-category="Montres"><div class="cat-icon">⌚</div><strong>Montres</strong><small>Classiques · Luxe</small></button>
+          <button class="category-card" data-category="Sacs"><div class="cat-icon">👜</div><strong>Sacs</strong><small>À main · Bandoulière</small></button>
+          <button class="category-card" data-category="Accessoires"><div class="cat-icon">💎</div><strong>Accessoires</strong><small>Lunettes · Bijoux · Parfums</small></button>
+          <button class="category-card" data-category="Promotions"><div class="cat-icon">%</div><strong>Promotions</strong><small>Offres limitées</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="nouveautes" class="products-section section soft">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow">SÉLECTION ANAYA</span><h2>Nos produits <span>phares</span></h2></div>
+          <a href="#catalogue">Voir tous les produits →</a>
+        </div>
+        <div class="products-grid" id="featuredProducts"></div>
+      </div>
+    </section>
+
+    <section class="promo-banner" id="promotions">
+      <div class="container promo-inner">
+        <div><span class="eyebrow">OFFRE DU MOMENT</span><h2>Votre style mérite une touche d'exception.</h2><p>Profitez de nos sélections promotionnelles pendant une durée limitée.</p></div>
+        <a class="btn dark" href="#catalogue">Voir les promotions →</a>
+      </div>
+    </section>
+
+    <section id="catalogue" class="catalogue section">
+      <div class="container">
+        <div class="section-head catalog-head">
+          <div><span class="eyebrow">BOUTIQUE</span><h2>Notre <span>catalogue</span></h2></div>
+          <div class="filters">
+            <select id="categoryFilter"><option value="all">Toutes les catégories</option><option>Vêtements</option><option>Chaussures</option><option>Montres</option><option>Sacs</option><option>Accessoires</option><option>Promotions</option></select>
+            <select id="sortFilter"><option value="default">Trier par</option><option value="priceAsc">Prix croissant</option><option value="priceDesc">Prix décroissant</option><option value="name">Nom</option></select>
+          </div>
+        </div>
+        <div class="products-grid" id="catalogueProducts"></div>
+        <div class="empty-state" id="emptyState" hidden>Aucun produit ne correspond à votre recherche.</div>
+      </div>
+    </section>
+
+    <section class="services section">
+      <div class="container service-grid">
+        <div class="service"><div>🚚</div><div><strong>Livraison rapide</strong><p>Dans tout le Mali</p></div></div>
+        <div class="service"><div>🛡️</div><div><strong>Paiement à la livraison</strong><p>Simple et sécurisé</p></div></div>
+        <div class="service"><div>💬</div><div><strong>Une équipe à votre écoute</strong><p>96 96 66 66</p></div></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">NOUS CONTACTER</span>
+          <h2>Parlons de votre <span>prochain look.</span></h2>
+          <p>Une question sur une taille, un produit ou une livraison ? Notre équipe vous répond rapidement.</p>
+          <div class="contact-list">
+            <a href="https://wa.me/22396966666" target="_blank">🟢 <div><strong>WhatsApp</strong><small>+223 96 96 66 66</small></div></a>
+            <a href="tel:+22396966666">📞 <div><strong>Téléphone</strong><small>+223 96 96 66 66</small></div></a>
+            <div>📍 <div><strong>Bamako, Mali</strong><small>Livraison partout au Mali</small></div></div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input id="contactName" required placeholder="Votre nom">
+          <input id="contactEmail" type="email" required placeholder="Votre e-mail">
+          <textarea id="contactMessage" required rows="5" placeholder="Votre message"></textarea>
+          <button class="btn primary" type="submit">Envoyer le message</button>
+          <p id="contactNotice" class="notice"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-main">
+      <div class="footer-brand"><div class="brand-mark">A</div><div><strong>ANAYA</strong><span>BOUTIQUE & COUTURE</span></div><p>Mode · Élégance · Confiance</p></div>
+      <div><h4>Boutique</h4><a href="#catalogue">Catalogue</a><a href="#nouveautes">Nouveautés</a><a href="#promotions">Promotions</a></div>
+      <div><h4>Informations</h4><a href="#contact">Contact</a><a href="#">Livraison</a><a href="#">Conditions</a></div>
+      <div><h4>Suivez-nous</h4><div class="socials"><a href="#">f</a><a href="#">◎</a><a href="#">♪</a></div><a class="wa-link" href="https://wa.me/22396966666" target="_blank">WhatsApp →</a></div>
+    </div>
+    <div class="footer-bottom">© 2026 ANAYA Boutique & Couture · Votre style, notre passion ♥</div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-head"><h3>Votre panier</h3><button id="cartClose">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer"><div><span>Total</span><strong id="cartTotal">0 FCFA</strong></div><button class="btn primary" id="whatsappOrder">Commander sur WhatsApp</button><button class="btn outline" id="clearCart">Vider le panier</button></div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="modal" id="productModal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="data/products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
